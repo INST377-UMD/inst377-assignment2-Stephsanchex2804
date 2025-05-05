@@ -1,0 +1,44 @@
+
+<html>
+<head>
+  <title>Dog Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+  <script src="dog.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Dog Explorer</h1>
+    <div class="red-bar"></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dog.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Lets look at some Dogs!!</h2>
+    <div id="carousel" class="carousel" data-simple-slider></div>
+    <h3 style="padding-left: 40px;">Select a Dog Breed</h3>
+    <div id="breed-buttons" class="buttons"></div>
+    <div id="breed-info" class="info-box" style="display:none;"></div>
+  </main>
+
+  <div class="audio-box">
+    <h3>Audio Commands</h3>
+    <ul>
+      <li>Load Breed Info<br> ➤ Say: Load dog breed &lt;breed name&gt;</li>
+      <li>Change Page<br> ➤ Say: Navigate to &lt;home|stocks|dogs&gt;</li>
+    </ul>
+    <div class="audio-buttons">
+      <button id="start-audio">Turn On Listening</button>
+      <button id="stop-audio">Turn Off Listening</button>
+    </div>
+  </div>
+</body>
+</html>
