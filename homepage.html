@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  
+  <header>
+    <h1>INST377</h1>
+    <div class="red-bar"></div>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dog.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  
+  <main>
+    <h2>Now lets try some different activities!</h2>
+
+    <div class="buttons">
+      <button class="custom-button" onclick="location.href='stocks.html'">Stocks</button>
+      <button class="custom-button" onclick="location.href='dogs.html'">Dogs</button>
+    </div>
+
+    
+    <div class="quote-box">
+      <h3>Quote of the Page Load</h3>
+      <p id="quote-box">Loading quote...</p>
+    </div>
+  </main>
+
+  
+  <div class="audio-box">
+    <h3>Here we will have options to navigate using Audio!</h3>
+    <p>Ensure your Mic is enabled to be able to use this feature</p>
+    <ul>
+      <li>Navigate to a Different Page<br> ➤ Say: Navigate to &lt;page&gt;</li>
+      <li>Change the Page Color<br> ➤ Say: Change the color to &lt;color&gt;</li>
+      <li>Say Hello Back to you!<br> ➤ Say: Hello</li>
+    </ul>
+    <div class="audio-buttons">
+      <button id="start-audio">Turn On Listening</button>
+      <button id="stop-audio">Turn Off Listening</button>
+    </div>
+  </div>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
